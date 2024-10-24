@@ -1,37 +1,85 @@
-/* Establece el estilo de la galería */
+body {
+    background: linear-gradient(135deg, rgba(128, 0, 128, 0.8), rgba(0, 0, 0, 0.8), rgba(0, 0, 255, 0.8));
+    /* Gradiente de púrpura, negro y azul */
+
+    height: 100vh;
+    /* Asegura que el fondo cubra toda la altura de la ventana */
+
+    margin: 0;
+    /* Elimina los márgenes por defecto */
+
+    display: flex;
+    /* Permite centrar contenido si lo deseas */
+
+    align-items: center;
+    /* Centra verticalmente el contenido */
+
+    justify-content: center;
+    /* Centra horizontalmente el contenido */
+
+}
+
+
+
+/* Estilo de la galería */
 .galeria {
-    display: flex; 
-    flex-wrap: wrap; 
-    justify-content: center; 
-    gap: 10px; 
-    max-width: 800px; 
-    margin: 0 auto; 
+    display: flex;
+    /* Usa Flexbox para alinear los elementos. */
+
+
+    flex-wrap: wrap;
+    /* Permite que los elementos se muevan a la siguiente línea. */
+
+
+    justify-content: center;
+    /* Centra los elementos horizontalmente. */
+
+
+    gap: 10px;
+    /* Espacio entre los elementos. */
+
+    max-width: 800px;
+    /* Ancho máximo del contenedor. */
+
+    margin: 0 auto;
+    /* Centra el contenedor en la página. */
+
 }
 
-/* Estilo para las imágenes en la galería */
+/* Estilo para las imágenes */
 .galeria img {
-    width: 23%; 
-    height: auto; 
-    object-fit: cover; 
-}
 
-/* Efectos visuales para las imágenes */
-.galeria img {
-    border-radius: 5px; /* Esquinas redondeadas */
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra */
-    transition: all 0.3s ease; /* Transición suave */
+    width: 23%;
+    /* Ancho de las imágenes en el contenedor. */
+
+    height: auto;
+    /* Mantiene la proporción de las imágenes. */
+
+    object-fit: cover;
+    /* Asegura que la imagen llene el espacio sin distorsionarse. */
+
+    border-radius: 5px;
+    /* Esquinas redondeadas. */
+
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    /* Sombra sutil. */
+
+    transition: all 0.3s ease;
+    /* Transición suave para efectos visuales. */
 }
 
 /* Estilos para pantallas medianas */
 @media (max-width: 768px) {
     .galeria img {
-        width: 48%; /* Ancho del 48% */
+        width: 48%;
+        /* Ancho del 48% en pantallas medianas. */
     }
 }
 
 /* Estilos para pantallas pequeñas */
 @media (max-width: 480px) {
     .galeria img {
-        width: 95%; /* Ancho del 95% */
+        width: 95%;
+        /* Ancho del 95% en pantallas pequeñas. */
     }
 }
